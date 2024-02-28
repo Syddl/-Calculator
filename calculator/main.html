@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="display">
+            <p id="screen"></p>
+        </div>
+        <div class="btn">
+            <p>
+                <button class="three-button clear" onclick=" 
+                calculation = '';
+
+                displayCalculation();
+
+                localStorage.setItem('calculation', calculation); ">AC</button>
+                
+                <button class="three-button" onclick="pressBTN(' +/- ');">+/-</button>
+                <button class="three-button" onclick="pressBTN('%');">%</button>
+                <button class="yellow-button" onclick="pressBTN(' / ');">÷</button>
+            </p>
+            <p>
+                <button class="num-button" onclick="pressBTN('7');">7</button>
+                <button class="num-button" onclick="pressBTN('8');">8</button>
+                <button class="num-button" onclick="pressBTN('9');">9</button>
+                <button class="yellow-button" onclick="pressBTN(' * ');">x</button>
+            </p>
+            <p>
+                <button class="num-button" onclick="pressBTN('4');">4</button>
+                <button class="num-button" onclick="pressBTN('5');">5</button>
+                <button class="num-button" onclick="pressBTN('6');">6</button>
+                <button class="yellow-button" onclick="pressBTN(' - ');">-</button>
+            </p>
+            <p>
+                <button class="num-button" onclick="pressBTN('1');">1</button>
+                <button class="num-button" onclick="pressBTN('2');">2</button>
+                <button class="num-button" onclick="pressBTN('3');">3</button>
+                <button class="yellow-button" onclick="pressBTN(' + ');">+</button>
+            </p>
+            <p>
+                <button class="num-0 num-button" onclick="pressBTN('0');">0</button>
+                <button class="num-button" onclick="pressBTN(' . ');">.</button>
+                <button class="yellow-button" onclick="
+                calculation = eval(calculation);
+
+
+                displayCalculation();
+
+                localStorage.setItem('calculation', calculation);">=</button>
+            </p>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
